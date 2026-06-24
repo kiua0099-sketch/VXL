@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://android.com"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A0A"
+    android:gravity="center">
+
+    <!-- Zyron Branding Logo Text -->
+    <TextView
+        android:id="@+id/logo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LAUNCHER"
+        android:textColor="#FF3B30"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.2"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/loading_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="LOADING LAUNCHER..."
+        android:textColor="#8E8E93"
+        android:textSize="12sp"
+        android:letterSpacing="0.1"/>
+
+    <!-- Custom Red Progress Bar Frame -->
+    <ProgressBar
+        android:id="@+id/splash_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="260dp"
+        android:layout_height="6dp"
+        android:layout_below="@id/loading_status"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:progressDrawable="@android:drawable/progress_horizontal"
+        android:progressTint="#FF3B30"
+        android:progress="93"/>
+</RelativeLayout>
